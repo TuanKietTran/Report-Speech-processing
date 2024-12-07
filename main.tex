@@ -231,13 +231,14 @@
 
     \begin{center}
         \begin{tabular}{c}
-        \multicolumn{1}{l}{\textbf{{\Large Data Engineering}}}\\
+        \multicolumn{1}{l}{\textbf{{\Large Speech Processing}}}\\
         ~~\\
         \hline
         \\
         \multicolumn{1}{l}{\textbf{{\Large Assignment Report}}}\\
         \\
-        \textbf{{\Huge Flight Operation Analysis}}\\
+        \textbf{{\Large Utilizing Generative AI for Context-Aware Note Generation}}\\
+        \textbf{{\Large in Real-Time Speech Processing}}\\
         \\
         \hline
         \end{tabular}
@@ -246,7 +247,7 @@
     \vspace{1cm}
     \begin{table}[H]
         \begin{tabular}{rrl}
-        \hspace{5 cm} & \textbf{Mentor}: & Võ Thị Ngọc Châu\\
+        \hspace{5 cm} & \textbf{Mentor}: & Nguyễn Đức Dũng\\
         
         & \textbf{Student}: & Trần Hà Tuấn Kiệt -- 2011493 \\
         
@@ -296,8 +297,122 @@
 \newpage
 
 %\thispagestyle{empty} \renewcommand\thechapter{Chapter \arabic{chapter}}
-\section{Introduction}
 
+\section*{Abstract}
+In the era of information overload, efficient and accurate note-taking during
+real-time speech interactions is paramount across various sectors, including
+education, business, and healthcare. Traditional method often fall short in
+capturing and filtering all context of discussions, leading to incomplete,
+unrelated or misinterpreted notes. This research explores the potential of
+Generative Artificial Intelligence (AI) to develop a context-aware note taking
+system capable of processing and summarizing real-time speech inputs. By
+integrating natural language processing (NLP) and automatic speech recognition
+(ASR) to transcribe interactions, coupled with advanced prompting techniques to
+generate draft notes using large language models (LLMs), the system dynamically
+interprets the semantic nuances of ongoing conversations, ensuring that the
+generated notes accurately reflect the intended meaning and key points
+discussed. Preliminary evaluations demonstrate the system's proficiency in
+maintaining contextual integrity and relevance in the notes produced, thereby
+enhancing comprehension and retention for users. The findings suggest
+significant potential for deploying such AI-driven solutions to augment human
+capabilities in environments where real-time information processing is critical.
+
+\newpage
+\section{Introduction}
+In today's information-rich environment, effective and precise note-taking
+during real-time speech interactions is crucial across various sectors,
+including education, business, and healthcare. Accurate documentation at the
+point of care enhances patient safety by ensuring timely and precise recording
+of clinical information, thereby reducing errors in treatment. %WIKIPEDIA 
+Moreover, the adoption of electronic health records and point-of-care
+documentation devices has streamlined workflows, allowing healthcare providers
+to capture data directly during patient encounters, which minimizes redundant
+tasks and improves communication among care teams. % WIKIPEDIA 
+Similarly, in educational settings, structured note-taking methods like the
+Cornell Notes system have been shown to aid in the retention and comprehension
+of lecture material, thereby enhancing learning outcomes.
+%OXFORD BIBLIOGRAPHIES
+These examples underscore the importance of efficient note-taking practices in
+managing information effectively across different professional domains.
+
+Generative AI, a subset of artificial intelligence that creates new content
+based on existing data, offers significant opportunities to enhance
+context-aware documentation practices. By leveraging natural language processing
+(NLP) and automatic speech recognition (ASR), which are capable of understanding
+and generating human-like text, generative AI can produce coherent and
+contextually relevant documentation, thereby improving efficiency and accuracy
+across various sectors. 
+% This approach not only streamlines the documentation process but also ensures
+% that the generated content aligns closely with the specific requirements and
+% nuances of each application domain.
+\newpage
+\section{Previous Work}
+The integration of generative AI into real-time speech processing has led to
+significant advancements in context-aware note generation. Notable contributions
+include the development of frameworks that combine large language models (LLMs),
+retrieval-augmented generation (RAG), and automatic speech recognition (ASR) to
+automate the creation of structured notes from medical conversations. These
+systems capture and process both text and voice inputs, generating contextually
+accurate documentation \cite{leong2024gen}.
+
+% Whisper
+The development of Whisper (Alec .et al. 2022\cite{radford2022robust})
+represents a significant advancement in speech recognition technology. Trained
+on an extensive dataset of 680,000 hours of multilingual and multitask
+supervised data, Whisper demonstrates robust generalization across various
+benchmarks, often matching the performance of fully supervised models in
+zero-shot transfer scenarios without requiring fine-tuning. Notably, its
+accuracy and resilience are comparable to human capabilities, marking a
+substantial step forward in the field. The release of Whisper's models and
+inference code provides a solid foundation for future research and development
+in robust speech processing.
+
+Kernberg et al. (2023) \cite{biswas2024intelligent} conducted an evaluation of
+ChatGPT-4, a conversational AI developed by OpenAI utilizing GPT-3.5 and GPT-4
+large language models, to assess its effectiveness in generating SOAP
+(Subjective, Objective, Assessment, and Plan) notes from transcripts of
+simulated patient-provider interactions. The study identified an average of 23.6
+errors per clinical case, with omissions constituting 86\% of these errors.
+Additionally, there was notable variability between different iterations of the
+same case, with only 52.9\% of data elements consistently reported across all
+three replicates. The accuracy of the AI-generated notes was inversely
+correlated with both the length of the transcripts and the complexity of the
+data elements, indicating challenges in managing complex medical scenarios. The
+authors concluded that the quality and reliability of the AI-generated clinical
+notes did not meet the standards necessary for clinical application, emphasizing
+the need for further research to address issues related to accuracy,
+variability, and potential errors.
+
+In the realm of speech recognition, integrating contextual information has
+proven to enhance the performance of neural language models (NLMs). Martinez et
+al. (2021) \cite{martinez2021attention} introduced an attention-based mechanism
+that incorporates both textual and non-linguistic contextual data into NLMs,
+resulting in a 7.0\% relative reduction in perplexity over standard language
+models lacking contextual information. Similarly, Chang et al. (2021)
+\cite{chang2021context} developed a Context-Aware Transformer Transducer (CATT)
+that leverages multi-head attention to integrate contextual signals, achieving a
+24.2\% improvement in word error rate compared to baseline transformer
+transducer models. These advancements underscore the efficacy of attention-based
+methods in enhancing the adaptability and accuracy of speech recognition systems
+through the incorporation of contextual cues.
+
+
+These developments underscore the potential of generative AI to enhance the
+efficiency and accuracy of note-taking across various professional domains.
+\newpage
+
+
+\section{Methodology}
+
+\subsection {Data Collection}
+
+\newpage
+\section{Contextual Background}
+
+\newpage
+\section{Challenges and Further Research}
+
+\newpage
 \nocite{*}
 \bibliographystyle{plainnat}
 
