@@ -237,7 +237,8 @@
         \\
         \multicolumn{1}{l}{\textbf{{\Large Assignment Report}}}\\
         \\
-        \textbf{{\Large Utilizing Generative AI for Context-Aware Note Generation}}\\
+        \textbf{{\Large Utilizing Generative AI for Context-Aware Note
+        Generation}}\\
         \textbf{{\Large in Real-Time Speech Processing}}\\
         \\
         \hline
@@ -330,21 +331,43 @@ to capture data directly during patient encounters, which minimizes redundant
 tasks and improves communication among care teams. % WIKIPEDIA 
 Similarly, in educational settings, structured note-taking methods like the
 Cornell Notes system have been shown to aid in the retention and comprehension
-of lecture material, thereby enhancing learning outcomes.
-%OXFORD BIBLIOGRAPHIES
+of lecture material, thereby enhancing learning outcomes\cite{boyle2014note}.
 These examples underscore the importance of efficient note-taking practices in
 managing information effectively across different professional domains.
 
+Traditional methods of note-taking have been further enhanced by technological
+advancements, particularly through automatic speech recognition (ASR) systems.
+These systems rely on two primary components: an acoustic model (AM), which
+deciphers the relationship between audio signals and phonetic units, and a
+language model (LM), which predicts the likelihood of word sequences to ensure
+grammatical coherence. The language model is typically trained independently
+using extensive corpora of transcribed speech collected by existing ASR systems.
+Despite their effectiveness, traditional ASR systems often face challenges in
+capturing the full context of interactions \cite{itsp2022}.
+
 Generative AI, a subset of artificial intelligence that creates new content
-based on existing data, offers significant opportunities to enhance
-context-aware documentation practices. By leveraging natural language processing
-(NLP) and automatic speech recognition (ASR), which are capable of understanding
-and generating human-like text, generative AI can produce coherent and
-contextually relevant documentation, thereby improving efficiency and accuracy
-across various sectors. 
-% This approach not only streamlines the documentation process but also ensures
-% that the generated content aligns closely with the specific requirements and
-% nuances of each application domain.
+based on existing data, builds on these foundations to offer significant
+opportunities for enhancing context-aware documentation practices. By
+integrating advanced natural language processing (NLP) techniques with ASR
+capabilities, generative AI systems can produce coherent and contextually
+relevant documentation, thereby improving efficiency and accuracy across various
+sectors. This convergence of ASR and generative AI heralds a new era in
+real-time documentation, addressing limitations of traditional systems and
+paving the way for more dynamic and adaptive solutions.
+
+This research focuses on the development and evaluation of generative AI systems
+for context-aware note generation during real-time speech interactions. The
+study aims to bridge the gap between traditional ASR systems and advanced
+generative models by incorporating contextual understanding to produce coherent,
+accurate, and relevant notes. By leveraging techniques such as attention-based
+mechanisms, multi-modal data integration, and real-time natural language
+processing, the research seeks to address challenges like omissions,
+inaccuracies, and the inability to adapt to complex scenarios. The scope
+includes testing these models in diverse applications such as clinical
+documentation, educational environments, and business meetings, highlighting
+their potential to transform how notes are generated and utilized across various
+domains.
+
 \newpage
 \section{Previous Work}
 The integration of generative AI into real-time speech processing has led to
@@ -402,9 +425,13 @@ efficiency and accuracy of note-taking across various professional domains.
 \newpage
 
 
-\section{Methodology}
+\section{Approach}
 
-\subsection {Data Collection}
+\subsection {Data Processing}
+
+\subsection{Model}
+
+\subsection{Multitask Format}
 
 \newpage
 \section{Contextual Background}
